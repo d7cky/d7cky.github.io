@@ -1,3 +1,12 @@
+---
+title: Under Construction
+Date: 2022-02-02
+category: Hack The Box
+tags:
+  - HTB
+  - Under_Construction
+---
+
 # HTB-Under-Construction
 Vào dịp cuối năm trong lúc mọi người đang bận rộn dọn dẹp nhà cửa, sắp sửa đồ mới đón tết thì mình nhận được một challenge HackTheBox ở mức medium từ một người anh vừa mới quen qua một nhóm học tập trên facebook.
 Challenge này cho mình hẳn source web, sau khi tải source về và wow NodeJs, mình mù tịt với ngôn ngữ này :((. Đi sơ qua một vòng mình thấy có 2 file _JWWTHelper.js_ và _DBHelper.js_ làm mình nghĩ đến ***JWT attack*** và ***SQL injection***. 
