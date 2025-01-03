@@ -54,11 +54,12 @@ jobs:
 
       - name: Verify Bundler installation
         run: |
-          echo "Bundler path: $(gem which bundler)"
-          echo "Gem binary directory: $(gem env gemdir)/bin"
+          gem install bundler --user-install
+          echo "Bundler binary path: $(ls $HOME/.gem/ruby/*/bin)"
 
       - name: Update PATH for Bundler
-        run: echo 'PATH="$HOME/.gem/ruby/$(ls $HOME/.gem/ruby)/bin:$PATH"' >> $GITHUB_ENV
+        run: echo 'PATH=$HOME/.gem/ruby/$(ls $HOME/.gem/ruby)/bin:$PATH' >> $GITHUB_ENV
+
 
       - name: Reload PATH
         run: source $GITHUB_ENV
