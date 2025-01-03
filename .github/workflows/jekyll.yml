@@ -63,12 +63,12 @@ jobs:
           export PATH="$HOME/.gem/ruby/$(ls $HOME/.gem/ruby)/bin:$PATH"
           bundle --version
 
-      # - name: Update PATH for Bundler
-      #   run: echo 'PATH=$HOME/.gem/ruby/$(ls $HOME/.gem/ruby)/bin:$PATH' >> $GITHUB_ENV
+      - name: Update PATH for Bundler
+        run: echo 'PATH=$HOME/.gem/ruby/$(ls $HOME/.gem/ruby)/bin:$PATH' >> $GITHUB_ENV
 
 
-      # - name: Reload PATH
-      #   run: source $GITHUB_ENV
+      - name: Reload PATH
+        run: source $GITHUB_ENV
 
       - name: Install dependencies
         run: |
