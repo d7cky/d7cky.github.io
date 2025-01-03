@@ -38,9 +38,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y curl git
           curl -fsSL https://github.com/rbenv/rbenv-installer/raw/main/bin/rbenv-installer | bash
-          echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> $GITHUB_ENV
-          echo 'eval "$(rbenv init - bash)"' >> $GITHUB_ENV
-          source $GITHUB_ENV
+          export PATH="$HOME/.rbenv/bin:$PATH"
+          eval "$(rbenv init - bash)"
           rbenv install 3.3.0-preview3
           rbenv global 3.3.0-preview3
           ruby --version
