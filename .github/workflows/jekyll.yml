@@ -51,21 +51,29 @@ jobs:
       #     cache-version: 0 # Increment this number if you need to re-download cached gems
       - name: Install Bundler
         run: gem install bundler --user-install
+      
+      - name: Export Bundler path
+        run: |
+          export PATH="$HOME/.gem/ruby/$(ls $HOME/.gem/ruby)/bin:$PATH"
+          echo "::add-path::$HOME/.gem/ruby/$(ls $HOME/.gem/ruby)/bin"
+          echo "::set-env name=PATH::$HOME/.gem/ruby/$(ls $HOME/.gem/ruby)/bin:$PATH"
 
       - name: Verify Bundler installation
         run: |
-          gem install bundler --user-install
-          echo "Bundler binary path: $(ls $HOME/.gem/ruby/*/bin)"
+          export PATH="$HOME/.gem/ruby/$(ls $HOME/.gem/ruby)/bin:$PATH"
+          bundle --version
 
-      - name: Update PATH for Bundler
-        run: echo 'PATH=$HOME/.gem/ruby/$(ls $HOME/.gem/ruby)/bin:$PATH' >> $GITHUB_ENV
+      # - name: Update PATH for Bundler
+      #   run: echo 'PATH=$HOME/.gem/ruby/$(ls $HOME/.gem/ruby)/bin:$PATH' >> $GITHUB_ENV
 
 
-      - name: Reload PATH
-        run: source $GITHUB_ENV
+      # - name: Reload PATH
+      #   run: source $GITHUB_ENV
 
       - name: Install dependencies
-        run: bundle install
+        run: |
+          export PATH="$HOME/.gem/ruby/$(ls $HOME/.gem/ruby)/bin:$PATH"
+          bundle install
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
