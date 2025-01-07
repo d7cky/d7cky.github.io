@@ -1,7 +1,7 @@
 ---
 title: Under Construction
 Date: 2022-02-02
-category: Hack The Box
+categories: HackTheBox Easy
 tags:
   - HTB
   - Under_Construction

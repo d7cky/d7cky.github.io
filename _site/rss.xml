@@ -5,7 +5,132 @@
     <title>d7cky</title>
     <link>http://localhost:4000/</link>
     <description>This is where my hacking career posts are archived.</description>
-    <lastBuildDate>2024-10-17T18:23:06+07:00</lastBuildDate>
+    <lastBuildDate>2025-01-07T15:32:09+07:00</lastBuildDate>
+  
+  
+    <item>
+      <title>Shocker</title>
+      <link>http://localhost:4000/posts/shocker/</link>
+
+      
+      
+      <description>
+          
+
+
+
+
+
+          Mô tả
+Ngẫu hứng đêm phia ^^. Vì nay nhức chân không thể chạy bộ theo kế hoạch, chán quá không biết làm gì thôi thì làm một bài easy cho đỡ chán.
+Lướt mô tả của các bài easy một hồi thì mình quyết định chọn bài này, vì nó làm mình nhớ đến cái bug huyền thoại thời nào.
+Đây là mô tả của bài lab để bạn biết cụ thể hơn mình đang nói điều gì :)))
+
+
+Attack
+Recon
+Như thường lệ, vẫn là nmap.
+
+
+
+Vẫn là p...
+      </description>
+      
+      
+    </item>
+  
+  
+    <item>
+      <title>Cap</title>
+      <link>http://localhost:4000/posts/cap/</link>
+
+      
+      
+      <description>
+          
+
+
+
+
+
+          Mô tả
+Vào một buổi chiều Noen dự tính về sớm chở bạn người yêu đi chơi nhưng vẫn chưa tới giờ tan ca nên mình nán lại 1 xíu làm nhẹ 1 bài HTB easy.
+Đây là một số thông tin ít ỏi về mô tả của bài này.
+
+Attack
+Recon
+Cũng như thường lệ với các option cũ kĩ, mình vẫn tiếp tục nmap xem ip mà bài lab cung cấp có những dịch vụ nào hot khum.
+
+Chúng ta có 3 dịch vụ ftp, ssh, http.
+Như thường lệ thì mình...
+      </description>
+      
+      
+    </item>
+  
+  
+    <item>
+      <title>Nâng cấp raw shell (non-interactive shell) lên TTY shell (pseudo shell)</title>
+      <link>http://localhost:4000/posts/TTY-SHELL/</link>
+
+      
+      
+      <description>
+          
+
+
+
+
+
+          Revere shell
+Sau khi get shell thành công mình sẽ sử dụng python để khởi tạo TTY (trong trường hợp server victim không có python thì chịu 😅).
+python3 -c 'import pty;pty.spawn("/bin/bash")'
+
+Out Reverse shell
+Sau đó Ctrl+Z để suspended lệnh nc(gọi nôm na là đưa lệnh nc vào chế độ chạy nền). Và thoát khỏi shell đang listen. Đứng trên shell local tiếp tục gõ lệnh:
+stty raw -echo;fg
+
+Giải thích một...
+      </description>
+      
+      
+    </item>
+  
+  
+    <item>
+      <title>Bizness</title>
+      <link>http://localhost:4000/posts/bizness/</link>
+
+      
+      
+      <description>
+          
+
+
+
+
+
+          Mô tả
+Vẫn như mục tiêu đặt ra mỗi tuần một bài HTB nên hôm nay, trùng hợp là lại vào chiều t6 rãnh rỗi, mình sẽ giải một bài HTB mức easy này.
+Đọc nhẹ qua machine một xí thì có vẻ cũng khá đơn giản.
+
+
+
+Attack
+Recon
+nmap
+
+
+Khai báo domain bizness.htb vào file hosts và truy cập web từ trình duyệt xem có gì húp được hay không.
+
+
+
+Đây có vẻ như là một site quảng bá cho một doanh nghiệp nào đó.
+Xem ...
+      </description>
+      
+      
+    </item>
   
   
     <item>
@@ -49,154 +174,6 @@
           HTB-Under-Construction
 Vào dịp cuối năm trong lúc mọi người đang bận rộn dọn dẹp nhà cửa, sắp sửa đồ mới đón tết thì mình nhận được một challenge HackTheBox ở mức medium từ một người anh vừa mới quen qua một nhóm học tập trên facebook.
 Challenge này cho mình hẳn source web, sau khi tải source về và wow NodeJs, mình mù tịt với ngôn ngữ này :((. Đi sơ qua một vòng mình thấy có 2 file JWWTHelper.j...
-      </description>
-      
-      
-    </item>
-  
-  
-    <item>
-      <title>Enable Google Page Views</title>
-      <link>http://localhost:4000/posts/enable-google-pv/</link>
-
-      
-      
-      <description>
-          
-
-
-
-
-
-          This post is to enable Page Views on the Chirpy theme based blog that you just built. This requires technical knowledge and it’s recommended to keep the google_analytics.pv.* empty unless you have a good reason. If your website has low traffic, the page views count would discourage you to write more blogs. With that said, let’s start with the setup.
-
-Set up Google Analytics
-
-Create GA account a...
-      </description>
-      
-      
-    </item>
-  
-  
-    <item>
-      <title>Customize the Favicon</title>
-      <link>http://localhost:4000/posts/customize-the-favicon/</link>
-
-      
-      
-      <description>
-          
-
-
-
-
-
-          The favicons of Chirpy are placed in the directory assets/img/favicons/. You may want to replace them with your own. The following sections will guide you to create and replace the default favicons.
-
-Generate the favicon
-
-Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool Real Favicon Generator and click the button Select your Favicon image ...
-      </description>
-      
-      
-    </item>
-  
-  
-    <item>
-      <title>Getting Started</title>
-      <link>http://localhost:4000/posts/getting-started/</link>
-
-      
-      
-      <description>
-          
-
-
-
-
-
-          Prerequisites
-
-Follow the instructions in the Jekyll Docs to complete the installation of Ruby, RubyGems, Jekyll, and Bundler.
-
-Installation
-
-Creating a New Site
-
-There are two ways to create a new repository for this theme:
-
-
-  Using the Chirpy Starter - Easy to upgrade, isolates irrelevant project files so you can focus on writing.
-  Forking on GitHub - Convenient for custom development, but ...
-      </description>
-      
-      
-    </item>
-  
-  
-    <item>
-      <title>Writing a New Post</title>
-      <link>http://localhost:4000/posts/write-a-new-post/</link>
-
-      
-      
-      <description>
-          
-
-
-
-
-
-          This post will guide you how to write a post on Chirpy theme. Even if you have previous experience with Jekyll, this article is worth reading, because many features require specific variables to be set.
-
-Naming and Path
-
-Create a new file named YYYY-MM-DD-TITLE.EXTENSION and put it in the _posts of the root directory. Please note that the EXTENSION must be one of md and markdown. If you want to...
-      </description>
-      
-      
-    </item>
-  
-  
-    <item>
-      <title>Text and Typography</title>
-      <link>http://localhost:4000/posts/text-and-typography/</link>
-
-      
-      
-      <description>
-          
-
-
-
-
-
-          This post is to show Markdown syntax rendering on Chirpy, you can also use it as an example of writing. Now, let’s start looking at text and typography.
-
-Titles
-
-H1 - heading
-
-H2 - heading
-
-H3 - heading
-
-H4 - heading
-
-
-
-Paragraph
-
-I wandered lonely as a cloud
-
-That floats on high o’er vales and hills,
-
-When all at once I saw a crowd,
-
-A host, of golden daffodils;
-
-Beside the lake, beneath the t...
       </description>
       
       
