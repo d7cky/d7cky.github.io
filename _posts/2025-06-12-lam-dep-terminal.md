@@ -1,8 +1,11 @@
 ---
 title: Làm đẹp terminal
 Date: 2025-07-16
-categories: Tips - Trick
+categories: Guidelines
 tags:
+  - Guidelines
+  - Terminal-Beauty
+  - Tricks
 ---
 # Mô tả
 Khi đã quá chán nản với giao diện cơ bản của terminal, mình đã tìm cách trang trí làm sao để nó trông ổn hơn và tiện lợi hơn cho mình. Bài viết này có mục đích chính là sau này mình thay đổi máy mới có thể xem lại cách đã từng làm đẹp terminal của mình và tiện thể chia sẻ thêm cho các bạn nào chưa biết trang trí cho terminal.
