@@ -1,5 +1,5 @@
 ---
-title: Hướng dẫn cấu hình proxy đi qua burpsuite
+title: Hướng dẫn cấu hình proxy đi qua burpsuite cho iOS
 Date: 2025-08-05
 categories: Pentest iOS
 tags:
