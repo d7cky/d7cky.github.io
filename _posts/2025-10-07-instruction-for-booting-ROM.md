@@ -24,7 +24,7 @@ fastboot flash vendor_boot vendor_boot.img
 fastboot reboot recovery
 ```
 
-![Screenshot](/assets/Pentest/Android/Screenshot 2025-10-07 at 23.57.45.png)
+	![Screenshot](/assets/Pentest/Android/Screenshot 2025-10-07 at 23.57.45.png)
 
 3. Sau khi máy đã vào được **mode recovery** thì hãy chọn **Factory Reset** ⟹ **Format Data/Factory Reset** ⟹ **Format data**.
 4. Sau đó trở về lại menu chính của **mode recovery** và chọn **Apply Update** ⟹ **Apply from ADB**.
@@ -34,7 +34,7 @@ adb sideload EvolutionX-16.0-20250725-panther-11.0-Official.zip
 ```
 *Lưu ý: File zip là file ROM tương ứng của các bạn nhé.*
 
-![Screenshot](/assets/Pentest/Android/Screenshot 2025-10-08 at 00.01.05.png)
+	![Screenshot](/assets/Pentest/Android/Screenshot 2025-10-08 at 00.01.05.png)
 
 6. Mặc dù trên máy tính chưa chạy đủ 100% nhưng trên điện thoại các bạn có thể bấm được các nút để điều khiển con trỏ thì có thể là đã boot xong rồi nhé.
 7. Khúc này trên điện thoại google pixel 7 của mình sẽ có 2 lựa chọn **Yes** và **No** 
