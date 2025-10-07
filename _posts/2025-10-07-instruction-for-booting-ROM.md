@@ -7,7 +7,7 @@ tags:
   - Tricks
 ---
 # Download ROM
-Trong bài viết này mình sẽ boot ROM Evolution-X nên mình sẽ tải ROM này [tại đây.](https://evolution-x.org/). Ngoài ra bạn có thể down ROM Evolution-X với version android 16 [tại đây.](https://github.com/d7cky/ROM-Evolution-X-for-Pixel-7)
+Trong bài viết này mình sẽ boot ROM Evolution-X nên mình sẽ tải ROM này [tại đây.](https://evolution-x.org/).
 # Boot ROM
 Để boot được ROM chúng ta cần chuẩn bị những thứ sau:
 - ROM để boot (đã được tải ở trên).
