@@ -1,10 +1,11 @@
 ---
 title: Hướng dẫn unlock bootloader cho Google Pixel
 Date: 2025-10-06
-categories: Pentest Android
+categories: [Pentest, Android]
 tags:
   - Guidelines
   - Tricks
+permalink: /pentest/android/instruction-unlock-bootloader-for-Pixel/
 ---
 # Truy cập vào bootloader.
 Trên thiết bị google pixel bạn hãy tắt nguồn và sau đó nhấn, giữ tổ hợp phím **nguồn + giảm âm lượng** để truy cập vào bootloader.

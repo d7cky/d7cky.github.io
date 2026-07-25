@@ -1,10 +1,11 @@
 ---
 title: Hướng dẫn Authentication với Github khi làm việc trên thiết bị mới
 Date: 2025-07-18
-categories: Guidelines
+categories: [Guidelines]
 tags:
   - Guidelines
   - Tricks
+permalink: /guidelines/authen-github/
 ---
 # Mô tả
 Chuyện là mình mới mua một thiết bị mới và clone project trên git của mình về làm việc cơ mà lại bị dính Authentication, thế là loay hoay cả buổi vẫn không tìm được cách fix. Nhờ chatGPT mà mình cũng fix được, vì vậy mình viết bài này mục đích chính là để lưu lại cách Authen trên thiết bị mới đối với git để sau này tìm lại cho nhanh. Bạn nào thấy phù hợp có thể làm theo giống mình nhé.

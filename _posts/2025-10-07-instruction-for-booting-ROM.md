@@ -1,10 +1,11 @@
 ---
 title: Hướng dẫn boot ROM
 Date: 2025-10-07
-categories: Pentest Android
+categories: [Pentest, Android]
 tags:
   - Guidelines
   - Tricks
+permalink: /pentest/android/instruction-for-booting-ROM/
 ---
 # Download ROM
 Trong bài viết này mình sẽ boot ROM Evolution-X nên mình sẽ tải ROM này [tại đây.](https://evolution-x.org/).

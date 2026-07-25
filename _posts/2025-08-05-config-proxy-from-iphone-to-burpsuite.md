@@ -1,10 +1,11 @@
 ---
 title: Hướng dẫn cấu hình proxy đi qua burpsuite cho iOS
 Date: 2025-08-05
-categories: Pentest iOS
+categories: [Pentest, iOS]
 tags:
   - Guidelines
   - Tricks
+permalink: /pentest/android/config-proxy-from-iphone-to-burpsuite/
 ---
 # Cách 1
 ## Trên iPhone

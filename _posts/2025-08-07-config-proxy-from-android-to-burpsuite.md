@@ -1,10 +1,11 @@
 ---
 title: Hướng dẫn cấu hình proxy đi qua burpsuite cho Android
 Date: 2025-08-07
-categories: Pentest Android
+categories: [Pentest, Android]
 tags:
   - Guidelines
   - Tricks
+permalink: /pentest/android/config-proxy-from-android-to-burpsuite/
 ---
 ## Trên thiết bị chạy BurpSuite
 1. Vào phần **Proxy settings** ➱ chọn **Edit** như hình bên dưới.

@@ -1,11 +1,12 @@
 ---
 title: Hướng dẫn cấu hình workflow LLM with RAG basic
 Date: 2025-08-11
-categories: Articial-Intelligence
+categories: [Articial-Intelligence]
 tags:
   - Guidelines
   - Tricks
   - AI
+permalink: /articial-intelligence/intruduce-LLM-with-RAG-basic/
 ---
 # Description
 Đây là bài hướng dẫn sử dụng project [LLM with RAG basic](https://github.com/d7cky/LLM-with-RAG-basic) của mình. Để việc chọn LLM model trở nên linh động nên trong project mình không sử dụng bất kỳ image LLM nào chạy trên **Docker**. Vì vậy nếu muốn sử dụng project các bạn có thể chọn LLM model tuỳ thích, có thể là local (LLM studio, Ollama,....) hoặc cloud (chatGPT, Claude, Grok, Copilot,....). Ngoài ra các bạn nhớ cài đặt **Docker** để có thể sử dụng project nhé.

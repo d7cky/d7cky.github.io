@@ -1,10 +1,11 @@
 ---
 title: Hướng dẫn xây dựng Burp extension cơ bản
 Date: 2025-07-18
-categories: Guidelines
+categories: [Guidelines]
 tags:
   - Guidelines
   - Tricks
+permalink: /guidelines/build-burp-extension-with-Maven/
 ---
 # Mô tả
 Vì nhu cầu sử dụng muốn sử dụng Montoya API của Burp nên buộc mình phải dev và build Burp extension với *Java* thay vì *Python* trước đó mình đã từng build. Bởi vì đụng tới *Java* nên mình cảm thấy mọi thứ trở nên phức tạp, mình viết bài này mục tiêu chính chỉ để sau này cần thì xem lại cho nhanh và cũng giúp bạn nào chưa biết cách tạo ra Burp extension bằng *Java (Maven)* có thể tiếp cận nó một cách đơn giản nhất.
