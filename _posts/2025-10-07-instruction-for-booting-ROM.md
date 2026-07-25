@@ -12,7 +12,7 @@ Trong bài viết này mình sẽ boot ROM Evolution-X nên mình sẽ tải ROM
 # Boot ROM
 Để boot được ROM chúng ta cần chuẩn bị những thứ sau:
 1. ROM để boot (đã được tải ở trên).
-2. Đảm bảo bootloader của thiết bị được unlock (tham khảo [bài viết sau](https://d7cky.github.io/posts/instruction-unlock-bootloader-for-Pixel/) để unlock bootloader cho các dòng pixel).
+2. Đảm bảo bootloader của thiết bị được unlock (tham khảo [bài viết sau](https://d7cky.github.io/pentest/android/instruction-unlock-bootloader-for-Pixel/) để unlock bootloader cho các dòng pixel).
 3. Bộ công cụ SDK của android (bạn có thể tải [tại đây](https://developer.android.com/tools/releases/platform-tools)).
 Sau khi mọi thứ đã sẵn sàng chúng ta sẽ thực hiện tuần tự các bước sau để boot ROM nhé.
 - Đảm bảo thiết bị di động đang ở trong bootloader.

@@ -1,10 +1,12 @@
 ---
 title: Under Construction
 Date: 2022-02-02
-categories: [HackTheBox, Easy]
+categories: [HackTheBox, HTB-Easy]
 tags:
   - HTB
   - Under_Construction
+  - HTB-Easy
+  - Easy
 permalink: /hackthebox/easy/under-construction/
 ---
 
