@@ -34,17 +34,17 @@ Các tham số **POSTGRES_PASSWORD**, **SERVICE_ROLE_KEY**, **DASHBOARD_USERNAME
 ### Docker compose
 Sau khi cấu hình xong xuôi, mình sẽ tiến hành chạy lệnh `docker compose up` để pull image cũng như tạo container.
 
-![Screenshot](/assets/articial-intelligence/Screenshot 2025-08-11 at 11.22.47.png)
+![Screenshot](/assets/articial-intelligence/Screenshot%202025-08-11%20at%2011.22.47.png)
 ### Supabase
 Sau khi các dịch vụ ở docker được run ổn định các bạn có thể truy cập vào [supabase](http://localhost:8000) để cấu hình.
 
-![Screenshot](/assets/articial-intelligence/Screenshot 2025-08-11 at 14.49.45.png)
+![Screenshot](/assets/articial-intelligence/Screenshot%202025-08-11%20at%2014.49.45.png)
 
 Thông tin login các bạn có thể xem ở file `.env` đó là 2 tham số **DASHBOARD_USERNAME** và **DASHBOARD_PASSWORD**.
 Sau khi login mình sẽ tạo một table để làm nhiệm vụ lưu trữ các vector mà chúng ta sẽ embedding từ workflow.
 **SQL Editor** ➠ **Quickstarts** ➠ **LangChain** ➠ **Run** (trong trường hợp bạn đã enable extension **vector** rồi thì khi **run** sẽ gặp lỗi, khi đó bạn nên xoá dòng `create extension vector`).
 
-![Screenshot](/assets/articial-intelligence/Screenshot 2025-08-11 at 14.56.25.png)
+![Screenshot](/assets/articial-intelligence/Screenshot%202025-08-11%20at%2014.56.25.png)
 
 ☞ Kết quả hiện thị như hình trên thì **Run** thành công. Sau đó bạn có thể vào **Table Editor** để xem lại table **documents** đã được tạo ra hay chưa.
 
@@ -56,13 +56,13 @@ Mình sẽ hướng dẫn các bạn cấu hình node **postgres** và **supabas
 Truy cập vào node **postgres** và khởi tạo một credential mới.
 Sau đó các bạn config như hình bên dưới:
 
-![Screenshot](/assets/articial-intelligence/Screenshot 2025-08-11 at 15.08.25.png)
+![Screenshot](/assets/articial-intelligence/Screenshot%202025-08-11%20at%2015.08.25.png)
 
 Phần `host`, `database`, `port`, `password` các bạn có thể xem ở file `.env`. Phần `user` bạn có thể xem ở phần connect bên **supabase**.
 #### Supabase Node
 Tương tự **postgres** tạo một credential mới. Và điền thông tin như hình.
 
-![Screenshot](/assets/articial-intelligence/Screenshot 2025-08-11 at 15.12.44.png)
+![Screenshot](/assets/articial-intelligence/Screenshot%202025-08-11%20at%2015.12.44.png)
 
 Phần `host` các bạn có thể lấy phần domain từ tham số **addr** ở file `ngrok.yml` (phải thay đổi thành port 8000 như trên hình nữa nhé). Còn **Service Role Secret** thì các bạn lấy ở file `.env` trong tham số **SERVICE_ROLE_KEY**.
 # Kết luận
