@@ -10,15 +10,15 @@ permalink: /pentest/android/config-proxy-from-android-to-burpsuite/
 ## Trên thiết bị chạy BurpSuite
 1. Vào phần **Proxy settings** ➱ chọn **Edit** như hình bên dưới.
 
-![Screenshot](/assets/Pentest/iOS/Screenshot 2025-08-05 at 10.51.14.png)
+![Screenshot](/assets/Pentest/iOS/Screenshot%202025-08-05%20at%2010.51.14.png)
 
 2. Ở phần này sẽ chọn option **All interfaces**.
 
-![Screenshot](/assets/Pentest/iOS/Screenshot 2025-08-05 at 10.28.47.png)
+![Screenshot](/assets/Pentest/iOS/Screenshot%202025-08-05%20at%2010.28.47.png)
 
 3. Chọn qua tab **Request handling** và tick vào **Support invisible proxying**.
 
-![Screenshot](/assets/Pentest/iOS/Screenshot 2025-08-05 at 10.51.58.png)
+![Screenshot](/assets/Pentest/iOS/Screenshot%202025-08-05%20at%2010.51.58.png)
 ## Trên thiết bị Android.
 Truy cập vào **Settings Wifi** ➱ **Proxy** ➱ **Manual** và config như sau:
 - Proxy host name: *địa chỉ IP hoặc domain của thiết bị đang chạy BurpSuite*
