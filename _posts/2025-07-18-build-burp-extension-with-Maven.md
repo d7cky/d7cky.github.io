@@ -14,13 +14,13 @@ Các bạn truy cập vào [trang chủ IntelliJ](https://www.jetbrains.com/idea
 
 Chú ý: Các bạn kéo xuống và chọn đúng cấu hình cần download như hình dưới nhé, nhớ là kéo xuống nhìn kỹ, lúc đầu mình cũng nhầm nó là footer của web nên không tìm được bảng Community á kkkkkk.
 
-![Screenshot](/assets/tips-tricks/Screenshot 2025-07-18 at 15.05.01.png)
+![Screenshot](/assets/tips-tricks/Screenshot%202025-07-18%20at%2015.05.01.png)
 # Tạo project Maven
 Sau khi cài đặt xong chúng ta sẽ tạo project, nhớ là chọn **Maven** ở mục *Build system* nhé.
 
-![Screenshot](/assets/tips-tricks/Screenshot 2025-07-18 at 15.09.37.png)
+![Screenshot](/assets/tips-tricks/Screenshot%202025-07-18%20at%2015.09.37.png)
 
-![Screenshot](/assets/tips-tricks/Screenshot 2025-07-18 at 15.12.08.png)
+![Screenshot](/assets/tips-tricks/Screenshot%202025-07-18%20at%2015.12.08.png)
 
 Sau khi tạo xong project **Maven** chúng ta sẽ có cấu trúc thư mục như hình trên.
 ## Cấu hình thư viện Burp

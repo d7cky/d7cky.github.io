@@ -19,7 +19,7 @@ xcode-select —-install
 ```
 Nếu bạn gặp lỗi, hãy chạy `xcode-select -r` để reset `xcode-select`.
 
-![Screenshot](/assets/tips-tricks/Screenshot 2025-07-16 at 16.42.44.png)
+![Screenshot](/assets/tips-tricks/Screenshot%202025-07-16%20at%2016.42.44.png)
 
 Nếu được thông báo như hình nghĩa là `xcode-select` của bạn đã được cài đặt ⟹ tiếp tục bước tiếp theo.
 
@@ -68,7 +68,7 @@ Mở file cấu hình **.zshrc** để sửa theme đã tải xuống, run l�
 open ~/.zshrc
 ```
 
-![Screenshot](/assets/tips-tricks/Screenshot 2025-07-16 at 17.07.22.png)
+![Screenshot](/assets/tips-tricks/Screenshot%202025-07-16%20at%2017.07.22.png)
 
 Khi file cấu hình **.zshrc** đã hiển thị, bạn thêm dòng `ZSH_THEME="powerlevel10k/powerlevel10k"` vào vị trí như trên, dùng tổ hợp phím **Command + S** để save lại thay đổi. Nếu muốn huỷ config nào có thể thay tên theme hoặc thêm kí tự `#` vào đầu dòng và thêm config mới nhé.
 
@@ -77,7 +77,7 @@ Quay trở lại iTerm2, bạn Quit iTerm2 (Command + Q) và open lại hoặc r
 source ~/.zshrc
 ```
 
-![Screenshot](/assets/tips-tricks/Screenshot 2025-07-16 at 17.10.19.png)
+![Screenshot](/assets/tips-tricks/Screenshot%202025-07-16%20at%2017.10.19.png)
 
 Theme p10k sẽ hiển thị cấu hình cho lần đầu tiên, hoặc bạn có thể chạy lệnh sau để hiển thị cấu hình như trên
 ```
@@ -85,11 +85,11 @@ p10k configure
 ```
 Làm theo hướng dẫn để dễ dàng cá nhân hoá theo sở thích của bạn. Như hình trên mình chọn **Yes** và cài đặt font **Meslo Nerd Font**.
 
-![Screenshot](/assets/tips-tricks/Screenshot 2025-07-16 at 17.14.36.png)
+![Screenshot](/assets/tips-tricks/Screenshot%202025-07-16%20at%2017.14.36.png)
 
 Nếu nhìn thấy hình kim cương giống mình thì chọn **Yes** nhé. Còn nếu chưa thấy thì bạn hãy kiểm tra và cài lại **Powerlevel10k** hoặc font nhé.
 
-![Screenshot](/assets/tips-tricks/Screenshot 2025-07-16 at 17.16.35.png)
+![Screenshot](/assets/tips-tricks/Screenshot%202025-07-16%20at%2017.16.35.png)
 
 Tương tự ổ khoá cũng vậy. Tiếp tục cho các lựa chọn nhận dạng như vậy.
 Từ giờ bạn có thể chọn theme tuỳ vào sở thích của bạn.
@@ -106,11 +106,11 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ```
 Thêm plugin vào phần plugin của tệp config **~/.zshrc** được hiển thị bên dưới
 
-![Screenshot](/assets/tips-tricks/Screenshot 2025-07-16 at 17.37.38.png)
+![Screenshot](/assets/tips-tricks/Screenshot%202025-07-16%20at%2017.37.38.png)
 
 Save file và chạy lại lệnh `source ~/.zshrc` để apply cài đặt mới nhất.
 Và đây là giao diện mới cho terminal của tôi.
 
-![Screenshot](/assets/tips-tricks/Screenshot 2025-07-16 at 17.39.33.png)
+![Screenshot](/assets/tips-tricks/Screenshot%202025-07-16%20at%2017.39.33.png)
 
 Thế là xong rồi đó, với giao diện mới và các tính năng tiện ích, chắc chắn bạn sẽ có nhiều động lực hơn để vọc vạch bash và gõ phím như dân chuyên nghiệp rồi. See you!
