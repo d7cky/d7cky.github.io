@@ -267,7 +267,7 @@ out(true, [
 ]);
 ```
 
-</detail>
+</details>
 
 ## Get Shell
 Đọc được file rồi thì còn chần chờ gì nữa mà không reverse shell thôi kkkk.
