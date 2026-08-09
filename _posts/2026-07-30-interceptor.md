@@ -144,7 +144,6 @@ Yeah có vẻ khả thi trên máy mình. Mang nó vào thực hành luôn xem s
 Yeah ngon luôn. Và đây là nội dung file `import_feed_api.php`
 <details>
 <summary><b>Nhấn vào đây để xem toàn bộ code</b></summary>
-
 ```
 <?php
 include "config.php";
@@ -266,7 +265,6 @@ out(true, [
   "cmd_output" => $output
 ]);
 ```
-
 </details>
 
 ## Get Shell
