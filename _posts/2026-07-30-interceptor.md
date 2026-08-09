@@ -266,6 +266,7 @@ out(true, [
   "cmd_output" => $output
 ]);
 ```
+
 </detail>
 
 ## Get Shell
