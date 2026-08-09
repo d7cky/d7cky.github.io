@@ -145,127 +145,125 @@ Yeah ngon luôn. Và đây là nội dung file `import_feed_api.php`
 <details>
 <summary><b>Nhấn vào đây để xem toàn bộ code</b></summary>
 
-~~~
-<?php
-include "config.php";
-header("Content-Type: application/json");
-
-function out($ok, $extra = []) {
-  echo json_encode(array_merge(["ok"=>$ok], $extra));
-  exit;
-}
-
-if (!isset($_SESSION["user"])) {
-  out(false, ["error"=>"Not logged in"]);
-}
-
-$url = trim($_POST["url"] ?? "");
-$url = preg_replace('/[;&|]/', '', $url, 1);
-//echo $url;
-if ($url === "") out(false, ["error"=>"URL required"]);
-
-$parts = @parse_url($url);
-if (!$parts || empty($parts["scheme"]) || empty($parts["host"])) {
-  out(false, ["error"=>"Invalid URL"]);
-}
-
-$scheme = strtolower($parts["scheme"]);
-if (!in_array($scheme, ["http","https"])) {
-  out(false, ["error"=>"Only http/https allowed"]);
-}
-
-if (isset($parts["user"]) || isset($parts["pass"])) {
-  out(false, ["error"=>"Userinfo not allowed"]);
-}
-
-$host = strtolower($parts["host"]);
-
-if (in_array($host, ["localhost","localhost.localdomain"])) {
-  out(false, ["error"=>"Localhost not allowed"]);
-}
-
-function is_private_ip($ip) {
-
-  if (filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4)) {
-
-    $long = ip2long($ip);
-
-    $ranges = [
-      ["10.0.0.0","10.255.255.255"],
-      ["127.0.0.0","127.255.255.255"],
-      ["172.16.0.0","172.31.255.255"],
-      ["192.168.0.0","192.168.255.255"],
-      ["169.254.0.0","169.254.255.255"]
-    ];
-
-    foreach ($ranges as $r) {
-      if ($long >= ip2long($r[0]) && $long <= ip2long($r[1])) {
-        return true;
-      }
-    }
-  }
-
-  return false;
-}
-
-$ips = [];
-
-if (filter_var($host, FILTER_VALIDATE_IP)) {
-  $ips[] = $host;
-}
-else {
-
-  $dns = dns_get_record($host, DNS_A);
-
-  foreach ($dns as $d) {
-    if (!empty($d["ip"])) {
-      $ips[] = $d["ip"];
-    }
-  }
-}
-
-if (!$ips AND 1==2) {
-  out(false, ["error"=>"Internet not connected"]);
-}
-//echo "here";
-foreach ($ips as $ip) {
-  if (is_private_ip($ip)) {
-    out(false, ["error"=>"Private network access blocked"]);
-  }
-}
-
-//
-// Execute curl command like a terminal
-//
-
-//$safe_url = escapeshellarg($url);
-$safe_url = $url;
-
-$cmd = "curl -L --max-time 8 --connect-timeout 4 $safe_url 2>&1";
-ob_start();
-
-$return_code = 0;
-
-system($cmd, $return_code);
-
-$output = ob_get_clean();
-
-if ($return_code !== 0) {
-  out(false, [
-    "error" => "Internet not connected",
-    "cmd_output" => $output
-  ]);
-}
-
-//
-// return raw curl response
-//
-
-out(true, [
-  "message" => "Feed fetched successfully",
-  "cmd_output" => $output
-]);
-~~~
+><?php
+>include "config.php";
+>header("Content-Type: application/json");
+>
+>function out($ok, $extra = []) {
+>  echo json_encode(array_merge(["ok"=>$ok], $extra));
+>  exit;
+>}
+>
+>if (!isset($_SESSION["user"])) {
+>  out(false, ["error"=>"Not logged in"]);
+>}
+>
+>$url = trim($_POST["url"] ?? "");
+>$url = preg_replace('/[;&|]/', '', $url, 1);
+>//echo $url;
+>if ($url === "") out(false, ["error"=>"URL required"]);
+>
+>$parts = @parse_url($url);
+>if (!$parts || empty($parts["scheme"]) || empty($parts["host"])) {
+>  out(false, ["error"=>"Invalid URL"]);
+>}
+>
+>$scheme = strtolower($parts["scheme"]);
+>if (!in_array($scheme, ["http","https"])) {
+>  out(false, ["error"=>"Only http/https allowed"]);
+>}
+>
+>if (isset($parts["user"]) || isset($parts["pass"])) {
+>  out(false, ["error"=>"Userinfo not allowed"]);
+>}
+>
+>$host = strtolower($parts["host"]);
+>
+>if (in_array($host, ["localhost","localhost.localdomain"])) {
+>  out(false, ["error"=>"Localhost not allowed"]);
+>}
+>
+>function is_private_ip($ip) {
+>
+>  if (filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4)) {
+>
+>    $long = ip2long($ip);
+>
+>    $ranges = [
+>      ["10.0.0.0","10.255.255.255"],
+>      ["127.0.0.0","127.255.255.255"],
+>      ["172.16.0.0","172.31.255.255"],
+>      ["192.168.0.0","192.168.255.255"],
+>      ["169.254.0.0","169.254.255.255"]
+>    ];
+>
+>    foreach ($ranges as $r) {
+>      if ($long >= ip2long($r[0]) && $long <= ip2long($r[1])) {
+>        return true;
+>      }
+>    }
+>  }
+>
+>  return false;
+>}
+>
+>$ips = [];
+>
+>if (filter_var($host, FILTER_VALIDATE_IP)) {
+>  $ips[] = $host;
+>}
+>else {
+>
+>  $dns = dns_get_record($host, DNS_A);
+>
+>  foreach ($dns as $d) {
+>    if (!empty($d["ip"])) {
+>      $ips[] = $d["ip"];
+>    }
+>  }
+>}
+>
+>if (!$ips AND 1==2) {
+>  out(false, ["error"=>"Internet not connected"]);
+>}
+>//echo "here";
+>foreach ($ips as $ip) {
+>  if (is_private_ip($ip)) {
+>    out(false, ["error"=>"Private network access blocked"]);
+>  }
+>}
+>
+>//
+>// Execute curl command like a terminal
+>//
+>
+>//$safe_url = escapeshellarg($url);
+>$safe_url = $url;
+>
+>$cmd = "curl -L --max-time 8 --connect-timeout 4 $safe_url 2>&1";
+>ob_start();
+>
+>$return_code = 0;
+>
+>system($cmd, $return_code);
+>
+>$output = ob_get_clean();
+>
+>if ($return_code !== 0) {
+>  out(false, [
+>    "error" => "Internet not connected",
+>    "cmd_output" => $output
+>  ]);
+>}
+>
+>//
+>// return raw curl response
+>//
+>
+>out(true, [
+>  "message" => "Feed fetched successfully",
+>  "cmd_output" => $output
+>]);
 
 </details>
 
